@@ -15,9 +15,9 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     @Query("SELECT o FROM Order o WHERE o.customer.fullName = :name")
     List<Order> findAllByCustomerName(String name);
 
-    @Query("SELECT o FROM Order o WHERE o.orderLines.product.name = :productName")
+    @Query("SELECT o FROM Order o JOIN o.orderLines ol WHERE ol.product.name = :productName")
     List<Order> findAllByProductName(String productName);
 
-    @Query("SELECT o FROM Order o WHERE o.orderLines.product.skuCode = :skuCode")
+    @Query("SELECT o FROM Order o JOIN o.orderLines ol WHERE ol.product.skuCode = :skuCode")
     List<Order> findAllByProductSkuCode(long skuCode);
 }

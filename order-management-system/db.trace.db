@@ -1,0 +1,45 @@
+2022-07-05 12:23:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]order CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-214]
+2022-07-05 12:23:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]order (id bigint not null, creation_date date, customer_id bigint, primary key (id))"; expected "identifier"; SQL statement:
+create table order (id bigint not null, creation_date date, customer_id bigint, primary key (id)) [42001-214]
+2022-07-05 12:23:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table customer_orders add constraint FKqc4vhhst6pcwhjml2v994nn3l foreign key (orders_id) references [*]order"; expected "identifier"; SQL statement:
+alter table customer_orders add constraint FKqc4vhhst6pcwhjml2v994nn3l foreign key (orders_id) references order [42001-214]
+2022-07-05 12:23:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]order add constraint FKb8tboo4d95mh8gavvovwbb7vg foreign key (customer_id) references customer"; expected "identifier"; SQL statement:
+alter table order add constraint FKb8tboo4d95mh8gavvovwbb7vg foreign key (customer_id) references customer [42001-214]
+2022-07-05 12:23:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table order_order_lines add constraint FKbs6udjr9cofut87wnl35cpn94 foreign key (order_id) references [*]order"; expected "identifier"; SQL statement:
+alter table order_order_lines add constraint FKbs6udjr9cofut87wnl35cpn94 foreign key (order_id) references order [42001-214]
+2022-07-05 12:24:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]order CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-214]
+2022-07-05 12:24:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]order (id bigint not null, creation_date date, customer_id bigint, primary key (id))"; expected "identifier"; SQL statement:
+create table order (id bigint not null, creation_date date, customer_id bigint, primary key (id)) [42001-214]
+2022-07-05 12:24:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table customer_orders add constraint FKqc4vhhst6pcwhjml2v994nn3l foreign key (orders_id) references [*]order"; expected "identifier"; SQL statement:
+alter table customer_orders add constraint FKqc4vhhst6pcwhjml2v994nn3l foreign key (orders_id) references order [42001-214]
+2022-07-05 12:24:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]order add constraint FKb8tboo4d95mh8gavvovwbb7vg foreign key (customer_id) references customer"; expected "identifier"; SQL statement:
+alter table order add constraint FKb8tboo4d95mh8gavvovwbb7vg foreign key (customer_id) references customer [42001-214]
+2022-07-05 12:24:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table order_order_lines add constraint FKbs6udjr9cofut87wnl35cpn94 foreign key (order_id) references [*]order"; expected "identifier"; SQL statement:
+alter table order_order_lines add constraint FKbs6udjr9cofut87wnl35cpn94 foreign key (order_id) references order [42001-214]
+2022-07-05 12:25:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]order CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-214]
+2022-07-05 12:25:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]order (id bigint not null, creation_date date, customer_id bigint, primary key (id))"; expected "identifier"; SQL statement:
+create table order (id bigint not null, creation_date date, customer_id bigint, primary key (id)) [42001-214]
+2022-07-05 12:25:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table customer_orders add constraint FKqc4vhhst6pcwhjml2v994nn3l foreign key (orders_id) references [*]order"; expected "identifier"; SQL statement:
+alter table customer_orders add constraint FKqc4vhhst6pcwhjml2v994nn3l foreign key (orders_id) references order [42001-214]
+2022-07-05 12:25:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]order add constraint FKb8tboo4d95mh8gavvovwbb7vg foreign key (customer_id) references customer"; expected "identifier"; SQL statement:
+alter table order add constraint FKb8tboo4d95mh8gavvovwbb7vg foreign key (customer_id) references customer [42001-214]
+2022-07-05 12:25:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table order_order_lines add constraint FKbs6udjr9cofut87wnl35cpn94 foreign key (order_id) references [*]order"; expected "identifier"; SQL statement:
+alter table order_order_lines add constraint FKbs6udjr9cofut87wnl35cpn94 foreign key (order_id) references order [42001-214]

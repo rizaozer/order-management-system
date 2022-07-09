@@ -1,5 +1,6 @@
 package com.example.ordermanagementsystem.service;
 
+import com.example.ordermanagementsystem.api.OrderSearch;
 import com.example.ordermanagementsystem.dao.OrderRepository;
 import com.example.ordermanagementsystem.entity.Order;
 import org.springframework.stereotype.Service;
@@ -40,6 +41,16 @@ public class OrderService extends AbstractService<Order, Long, OrderRepository> 
                 .findFirst().ifPresent(orderLine -> orderLine.setQuantity(newQuantity));
         return  order.get();
     }
+
+    public List<Order> search(OrderSearch orderSearch) {
+        return switch (orderSearch.getKey()) {
+            case DATE -> repository.findAllByCreationDate(orderSearch.getDateValue());
+            case CUSTOMER -> repository.findAllByCustomerName(orderSearch.getStringValue());
+            case PRODUCT_NAME -> repository.findAllByProductName(orderSearch.getStringValue());
+            case PRODUCT_SKU -> repository.findAllByProductSkuCode(orderSearch.getIntegerValue());
+        };
+    }
+
 }
 
 

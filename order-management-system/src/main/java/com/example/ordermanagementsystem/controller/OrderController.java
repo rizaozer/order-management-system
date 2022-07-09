@@ -1,5 +1,6 @@
 package com.example.ordermanagementsystem.controller;
 
+import com.example.ordermanagementsystem.api.ProductQuantity;
 import com.example.ordermanagementsystem.entity.Customer;
 import com.example.ordermanagementsystem.entity.Order;
 import com.example.ordermanagementsystem.entity.Product;
@@ -39,8 +40,8 @@ public class OrderController {
     }
 
     @PutMapping ("{id}/product-name/quantity")
-    public Order changeQuantity(@PathVariable long id, @RequestParam String productName, @RequestBody int newQuantity) {
-        return orderService.changeQuantity(id, newQuantity, productName);
+    public Order changeQuantity(@PathVariable long id, @RequestParam ProductQuantity quantityChange) {
+        return orderService.changeQuantity(id, quantityChange.getUpdatedQuantity(), quantityChange.getProductName());
     }
 
 
